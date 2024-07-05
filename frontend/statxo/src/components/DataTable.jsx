@@ -53,7 +53,7 @@ const DataTable = () => {
   }, []);
 
   const fetchDATA = () => {
-    fetch('http://localhost:5000/api/data/records')
+    fetch('https://statxodatadetails1.onrender.com/api/data/records')
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
